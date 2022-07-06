@@ -6,7 +6,7 @@
 .contenedor{
     width:100%;
     height:100vh;
-    background-color: rgb(34, 35, 35);
+    background-color: rgb(4, 167, 167);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,7 @@
     width:20%;
     border: none;
     /* cursor: pointer; */
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(4, 107, 185);
 }
 .boton{
     width:100%;
@@ -109,6 +109,6 @@
     padding: 10px 5px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(4, 107, 185);
     cursor: pointer;
 }

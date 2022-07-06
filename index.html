@@ -1,55 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <!-- FontAwsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Formulario Registro</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Adivina el numero</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="contenedor">
-            <div class="formulario inicio">
-                <div class="mensaje1">
-                    <p>Esta función aun no está disponible.</p>
+    <div class="contenedor">
+        <div class="caja">
+            <span class="contar">0</span>
+            <h6>Solo debes ingresar Numeros entre el 0 y 99.</h6>
+            <form action="" class="formulario">
+                <p>Adivina el Numero oculto</p>
+                <div class="input">
+                    <input type="number" class="numero_ingresado" placeholder="numero" min="0" max="99" required>
+                    <button type="submit" class="btn_ver">Jugar</button>
                 </div>
-                <div class="mensaje">
-                    <p>Bienvenido a mi Formulario.</p>
-                    <span>Si aun no tienes una cuenta, regístrate. <i class="fa-solid fa-turn-down"></i></span>
-                    <button type="button" class="btn_inicio">Registrarse</button>
+                <span class="span">---</span>
+                <div class="boton">
+                    <button type="button" class="oculto">?</button>
+                    <span class="oculto_number">Numero oculto</span>
                 </div>
-                <form action="" class="form">
-                    <h3>Iniciar sesión</h3>
-                    <input type="email" placeholder="correo">
-                    <input type="password" placeholder="contraseña">
-                    <button type="button" class="iniciar_sesion">Iniciar sesión</button>
-                </form>
-            </div>
-
-            <div class="formulario registro desactivo">
-                <div class="mensaje1">
-                    <p>Esta función aun no está disponible.</p>
-                </div>
-                <form action="" class="form">
-                    <h3>Registrarse</h3>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="email" placeholder="correo">
-                    <input type="password" placeholder="contraseña">
-                    <button type="button" class="registrarse">Registrarse</button>
-                </form>
-                <div class="mensaje">
-                    <p>Ya tienes una cuenta?.</p>
-                    <span>Inicia sesión aqui. <i class="fa-solid fa-turn-down"></i></span>
-                    <button type="button" class="btn_registro">Iniciar Sesión</button>
-                </div>
-
-            </div>
+            </form>
+            <button class="nuevaJugada">nueva partida</button>
         </div>
     </div>
 
