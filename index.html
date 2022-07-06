@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Adivina el numero</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja">
+            <span class="contar">0</span>
+            <h6>Solo debes ingresar Numeros entre el 0 y 99.</h6>
+            <form action="" class="formulario">
+                <p>Adivina el Numero oculto</p>
+                <div class="input">
+                    <input type="number" class="numero_ingresado" placeholder="numero" min="0" max="99" required>
+                    <button type="submit" class="btn_ver">Jugar</button>
+                </div>
+                <span class="span">---</span>
+                <div class="boton">
+                    <button type="button" class="oculto">?</button>
+                    <span class="oculto_number">Numero oculto</span>
+                </div>
+            </form>
+            <button class="nuevaJugada">nueva partida</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
